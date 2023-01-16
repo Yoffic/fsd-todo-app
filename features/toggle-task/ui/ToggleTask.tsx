@@ -3,7 +3,6 @@ import Switch from '@mui/material/Switch';
 
 import { Task } from 'entities/task/model';
 import { useTasksContext } from 'app/providers/tasks';
-import useToggle from 'shared/hooks/useToggle';
 
 import { styles } from './styles';
 
