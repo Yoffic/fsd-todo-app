@@ -5,6 +5,8 @@ import TaskCard from 'entities/task/ui/TaskCard';
 import TaskRow from 'entities/task/ui/TaskRow';
 import ToggleTask from 'features/toggle-task/ui';
 
+import { styles } from './styles';
+
 interface ITaskListProps {
   tasks?: Tasks;
 }
@@ -15,7 +17,7 @@ function TaskList(props: ITaskListProps) {
   if (!tasks) return null;
 
   return (
-    <List>
+    <List sx={styles.list}>
       {Object.values(tasks).map((task) => (
         <TaskRow
           key={task.id}

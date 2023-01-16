@@ -30,6 +30,7 @@ const MuiSwitch = {
           opacity: 1,
           backgroundColor: '#10C200',
           border: 'none',
+          boxShadow: `inset 0 0 ${pxToRem(10)} ${pxToRem(3)} rgba(0, 0, 0, 0.25);`,
         },
         '.MuiSwitch-thumb': {
           background: '#ffffff',
@@ -48,6 +49,7 @@ const MuiSwitch = {
       borderRadius: pxToRem(20),
       opacity: 1,
       backgroundColor: '#366EFF',
+      boxShadow: `inset 0 0 ${pxToRem(10)} ${pxToRem(3)} rgba(0, 0, 0, 0.25);`,
     },
   },
   defaultProps: {},
