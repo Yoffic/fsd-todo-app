@@ -10,11 +10,19 @@ const theme = createTheme({
   components: {
     ...(overrides as Components),
   },
+  palette: {
+    background: {
+      default: '#222222',
+    },
+    text: {
+      primary: '#F4F4F4',
+    },
+  },
   typography: {
     h1: {
-      fontFamily: 'Abhaya Libre',
+      fontFamily: 'Actor',
       fontStyle: 'normal',
-      fontWeight: 600,
+      fontWeight: 400,
       fontSize: pxToRem(36),
       lineHeight: pxToRem(43),
       marginBottom: pxToRem(32),
