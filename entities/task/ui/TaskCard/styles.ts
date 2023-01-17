@@ -8,6 +8,7 @@ export const styles: SxStyles = {
     paddingTop: 0,
     paddingBottom: 0,
     paddingLeft: 0,
+    maxWidth: '80%',
   },
   divider: {
     borderWidth: pxToRem(2.5),
@@ -22,6 +23,10 @@ export const styles: SxStyles = {
   },
   description: {
     color: 'rgba(255, 255, 255, 0.6)',
+    whiteSpace: 'nowrap',
+    wordBreak: 'break-all',
+    overflow: 'hidden',
+    textOverflow: 'ellipsis',
   },
   completedTitle: {
     textDecorationLine: 'line-through',

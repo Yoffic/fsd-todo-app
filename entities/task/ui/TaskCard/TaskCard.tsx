@@ -22,7 +22,7 @@ function TaskCard(props: ITaskProps) {
   if (!taskId) return null;
 
   const { title, description, group, completed } = tasks[taskId];
-  const primaryTextStyles = completed ? styles.completedTitle : {};
+  const titleStyles = completed ? styles.completedTitle : {};
 
   return (
     <Box sx={styles.cardWrapper}>
@@ -31,7 +31,7 @@ function TaskCard(props: ITaskProps) {
         id={String(taskId)}
         sx={styles.textWrapper}
         primary={title}
-        primaryTypographyProps={{ variant: 'h2', sx: primaryTextStyles }}
+        primaryTypographyProps={{ variant: 'h2', sx: titleStyles }}
         secondary={description}
         secondaryTypographyProps={{ variant: 'body1', sx: styles.description }}
       />
