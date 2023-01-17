@@ -7,6 +7,7 @@ export type Task = {
   group: TaskGroups;
   completed: boolean;
   date: Date;
+  formattedDate: string;
 };
 
 export type Tasks = {
