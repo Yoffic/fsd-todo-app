@@ -1,5 +1,5 @@
-import { SxStyles } from 'app/styles/theme';
-import { pxToRem } from 'app/styles/theme/utils';
+import { SxStyles } from '@app/styles/theme';
+import { pxToRem } from '@app/styles/theme/utils';
 
 export const styles: SxStyles = {
   cardWrapper: {

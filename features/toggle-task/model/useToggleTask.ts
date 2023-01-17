@@ -1,5 +1,5 @@
 import { useCallback } from 'react';
-import { Tasks, useTasks } from 'entities/task/model';
+import { Tasks } from '@entities/task/model';
 
 export interface IUseToggleTasks {
   updateTaskCompletion: (id: number, completion: boolean) => void;

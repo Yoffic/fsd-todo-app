@@ -1,7 +1,7 @@
 import { createContext, ReactNode, useContext } from 'react';
 
-import { Tasks, useTasks } from 'entities/task/model';
-import { useToggleTasks } from 'features/toggle-task/model';
+import { useToggleTasks } from '@features/toggle-task/model';
+import { Tasks, useTasks } from '@entities/task/model';
 
 const initialState = {
   tasks: {},

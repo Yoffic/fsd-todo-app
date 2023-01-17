@@ -1,8 +1,8 @@
 import { memo, useCallback } from 'react';
 import Switch from '@mui/material/Switch';
 
-import { Task } from 'entities/task/model';
-import { useTasksContext } from 'app/providers/tasks';
+import { Task } from '@entities/task/model';
+import { useTasksContext } from '@app/providers/tasks';
 
 import { styles } from './styles';
 

@@ -1,7 +1,7 @@
 import { Box, Divider, ListItemText } from '@mui/material';
 
-import { Task, TaskGroups } from 'entities/task/model';
-import { useTasksContext } from 'app/providers/tasks';
+import { Task, TaskGroups } from '@entities/task/model';
+import { useTasksContext } from '@app/providers/tasks';
 
 import { styles } from './styles';
 
