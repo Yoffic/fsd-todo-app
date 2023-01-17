@@ -3,7 +3,7 @@ import { pxToRem } from '@app/styles/theme/utils';
 
 export const styles: SxStyles = {
   wrapper: {
-    width: pxToRem(390),
+    width: pxToRem(350),
   },
   title: {
     paddingLeft: pxToRem(16),

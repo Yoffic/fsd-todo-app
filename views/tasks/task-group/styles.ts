@@ -3,11 +3,7 @@ import { pxToRem } from 'app/styles/theme/utils';
 
 export const styles: SxStyles = {
   group: {
-    // display: 'flex',
-    // flexDirection: 'column',
-    // gap: pxToRem(16),
-    // padding: `${pxToRem(16)} ${pxToRem(26)} ${pxToRem(16)} ${pxToRem(16)}`,
-    width: pxToRem(390),
+    width: pxToRem(350),
     borderRadius: pxToRem(30),
     ':last-of-type': {
       borderBottomLeftRadius: pxToRem(30),
