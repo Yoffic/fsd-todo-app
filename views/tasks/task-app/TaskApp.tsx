@@ -11,6 +11,7 @@ import {
   groupTasksByDate,
 } from '@entities/task/lib';
 import { Task } from '@entities/task/model';
+import { pxToRem } from '@app/styles/theme/utils';
 
 function TaskApp() {
   const { tasks } = useTasksContext();
@@ -22,7 +23,7 @@ function TaskApp() {
   const otherDates = Object.keys(otherTasks);
 
   return (
-    <Stack spacing="32px">
+    <Stack spacing={pxToRem(32)}>
       <CurrentTasks>
         <TaskList tasks={todayTasks} />
       </CurrentTasks>
