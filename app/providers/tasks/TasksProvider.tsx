@@ -1,4 +1,4 @@
-import { createContext, ReactNode, useContext } from 'react';
+import { createContext, ReactNode, useContext, useMemo } from 'react';
 
 import { useToggleTasks } from '@features/toggle-task/model';
 import { Tasks, useTasks } from '@entities/task/model';
@@ -28,9 +28,13 @@ export function TasksProvider(props: ITasksProviderProps) {
   const { tasks, updateTasks } = useTasks();
   const { updateTaskCompletion } = useToggleTasks(tasks, updateTasks);
 
-  return (
-    <TasksContext.Provider value={{ tasks, updateTaskCompletion }}>
-      {children}
-    </TasksContext.Provider>
+  const contextValue = useMemo(
+    () => ({
+      tasks,
+      updateTaskCompletion,
+    }),
+    [tasks, updateTaskCompletion],
   );
+
+  return <TasksContext.Provider value={contextValue}>{children}</TasksContext.Provider>;
 }
