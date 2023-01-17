@@ -1,8 +1,8 @@
 import { List } from '@mui/material';
 
-import { Tasks } from 'entities/task/model';
-import TaskCard from 'entities/task/ui/TaskCard';
-import TaskRow from 'entities/task/ui/TaskRow';
+import { Tasks } from '@entities/task/model';
+import TaskCard from '@entities/task/ui/TaskCard';
+import TaskRow from '@entities/task/ui/TaskRow';
 import ToggleTask from 'features/toggle-task/ui';
 
 import { styles } from './styles';
