@@ -8,6 +8,9 @@ import TaskApp from 'views/tasks/task-app';
 import Header from 'views/header/Header';
 import ToggleNews from '@features/toggle-news/ui';
 
+import NewsProvider from '@app/providers/news';
+import News from 'views/news';
+
 const abhayaLibre = Abhaya_Libre({ weight: '600', subsets: ['latin'] });
 const actor = Actor({ weight: '400', subsets: ['latin'] });
 
@@ -30,14 +33,17 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <main className={abhayaLibre.className}>
-        <MainLayout>
-          <div className={actor.className}>
-            <Header after={<ToggleNews />} />
-          </div>
-          <TasksProvider>
-            <TaskApp />
-          </TasksProvider>
-        </MainLayout>
+        <NewsProvider>
+          <MainLayout>
+            <div className={actor.className}>
+              <Header after={<ToggleNews />} />
+            </div>
+            <TasksProvider>
+              <TaskApp />
+            </TasksProvider>
+          </MainLayout>
+          <News />
+        </NewsProvider>
       </main>
     </>
   );

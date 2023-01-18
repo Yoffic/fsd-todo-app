@@ -6,7 +6,7 @@ export const styles: SxStyles = {
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
-    maxHeight: '100vh',
+    minHeight: '100vh',
     width: pxToRem(390),
     margin: `${pxToRem(16)} auto`,
     paddingLeft: pxToRem(20),
